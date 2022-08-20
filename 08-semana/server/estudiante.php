@@ -4,20 +4,20 @@ require_once "conexion.php";
 $mysql = new Conexion();
 $conn = $mysql->connect();
 
-$data = [
-    $_POST['name'],
-    $_POST['lastname'],
-    $_POST['email'],
-    $_POST['desc'],
-];
+// $data = [
+//     $_POST['name'],
+//     $_POST['lastname'],
+//     $_POST['email'],
+//     $_POST['desc'],
+// ];
 
-$query = "insert into estudiantes (name,lastname,email,description) values('$data[0]', '$data[1]', '$data[2]', '$data[3]');";
+// $insert = "insert into estudiantes (name,lastname,email,description) values('$data[0]', '$data[1]', '$data[2]', '$data[3]');";
 
-
-$send = mysqli_query($conn, $query);
+$update = "update estudiantes set name='juancarlos' where id_estudiante = 1";
+$sendUpdate = mysqli_query($conn, $update);
 // echo json_encode($send);
-if($send) { 
-    echo json_encode("se ingreso correctamente");
+if($sendUpdate) { 
+    echo json_encode("actulizo");
 }else{
-    echo json_encode($query);
+    echo json_encode("no conectado");
 }
