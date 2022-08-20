@@ -13,6 +13,7 @@ $data = [
 
 $query = "insert into estudiantes (name,lastname,email,description) values('$data[0]', '$data[1]', '$data[2]', '$data[3]');";
 
+
 $send = mysqli_query($conn, $query);
 // echo json_encode($send);
 if($send) { 
