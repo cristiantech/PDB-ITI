@@ -2,7 +2,7 @@
 class Conexion {
     private $server = "localhost";
     private $user = "root";
-    private $pass = "";
+    private $pass = "L02PasCd";
     private $db = "academico";
 
     public function connect(){

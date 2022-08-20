@@ -3,6 +3,7 @@ require_once "conexion.php";
 
 $mysql = new Conexion();
 $conn = $mysql->connect();
+
 $data = [
     $_POST['name'],
     $_POST['lastname'],

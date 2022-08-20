@@ -16,8 +16,6 @@
         <input type="text" name="email" id="email">
         <label for="desc">Descripición</label>
         <input type="text" name="desc" id="desc">
-
-
         <input type="submit" value="Enviar">
     </form>
 
